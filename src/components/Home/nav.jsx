@@ -29,12 +29,12 @@ function Nav() {
   };
 
   return (
-    <nav className='flex justify-center gap-[5%] lg:gap-[%] lg:h-28 items-center text-secondary h-24 z-20 bg-white  lg:px-12 w-full  lg:ml-0  top-0 sticky '>
+    <nav className='flex justify-center gap-[5%] lg:gap-[%] lg:h-28 items-center text-secondary h-24 z-20 bg-white  lg:px-12   lg:ml-0  top-0 sticky '>
       {/* Logo and Hamburger Menu for Mobile */}
       <div className='flex items-center justify-between  w-full xl:w-fit lg:h-auto ' >
         <img className=" h-8 lg:w-full pl-3 lg:pl-3 lg:h-full xl:w-[100%] lg:object-contain" src={pic} alt='logo' />
         <div className='lg:hidden mr-5 lg:mr-0'>
-          <CiMenuBurger className='text-3xl cursor-pointer' onClick={handleMenuBar} />
+          <CiMenuBurger className='text-3xl cursor-pointer text-primary' onClick={handleMenuBar} />
         </div>
         </div>
 

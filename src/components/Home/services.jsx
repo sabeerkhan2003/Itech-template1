@@ -21,7 +21,7 @@ function Services() {
       <div className='m-[5%]'>
         <h6 className='text-primary text-[13px] tracking-wider'>OUR SERVICES</h6>
         <h2 className='text-[25px] font-inter tracking-wider mr-[10%]'>
-          <b className='mr-[35%]'>Perfect IT Solutions </b>
+          <b className='mr-[3%]'>Perfect IT Solutions </b>
           <span className='tracking-widest font-extralight w-[100%]'>For Your Business</span>
         </h2>
       </div>
