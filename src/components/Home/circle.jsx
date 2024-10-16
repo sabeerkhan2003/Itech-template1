@@ -1,51 +1,174 @@
+import { useState, useEffect } from 'react';
 import OrbitingCircles from "@/components/ui/orbiting-circles";
+import { TiTick } from "react-icons/ti";
+
 
 function IconCircles() {
+
+  const [radius, setRadius] = useState(30); // Default radius for small screens
+
+  // Change radius based on screen width
+  useEffect(() => {
+    const updateRadius = () => {
+      if (window.innerWidth >= 1024) {
+        setRadius(80); 
+      } else {
+        setRadius(30); 
+      }
+    };
+
+    window.addEventListener('resize', updateRadius);
+    updateRadius(); 
+
+    return () => window.removeEventListener('resize', updateRadius);
+  }, []);
+
+
+  const features=["Latest IT Solutions & Integration With Blockchain","Over 100+ Payment Gateways Support","AI Machine & Deep Learning",
+    "Dedicated Support 24/7"]
+
+
   return (
-    <div className="relative flex h-[500px] w-full flex-col items-center justify-center overflow-hidden rounded-lg border bg-background md:shadow-xl">
-      <span className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300 bg-clip-text text-center text-8xl font-semibold leading-none text-transparent dark:from-white dark:to-black">
+    <>
+    <div className="m-4 flex flex-col gap-5 lg:hidden">
+      <h6 className="text-[#0066FF] text-[13px] font-inter">WHY CHOOSE US</h6>
+      <h2 className="text-[#212529] text-[25px] font-bold w-[80%] tracking-widest">Boost Your Business<br></br><span className="text-[25px] text-[#212529] font-normal tracking-widest">With New Tech</span></h2><br />
+      <div className="text-[14px] text-[#666666] leading-7 m-1">Our team can assist you in transforming your business through latest tech capabilities to stay ahead of the curve.</div>
+
+      <ul className="flex flex-col gap-4">
+        {features.map((item,index)=>(
+          <li><div className="flex  items-center font-semibold  gap-2"><div><TiTick className="bg-[#0066FF] rounded-full text-white " /></div><h6 className="text-[#212529] text-[15px] font-inter flex">{item}</h6></div></li>
+        ))}
+      </ul>
+
+      <a className=" mt-20"><span className="text-white bg-[#0066FF] px-6 py-3 rounded-sm">How We Works</span></a>
+    </div>
+
+{/* ----------------------------------------------------------------------------------------------- */}
+    {/* small */}
+    <div className='flex flex-col-reverse '>
+  <div className="lg:flex lg:hidden  md:h-0 h-0">
+  <div className="relative bottom-48  -right-32 lg:left-0 flex h-[300px] lg:h-[600px] w-full  flex-col items-center justify-center overflow-hidden rounded-lg   md:-top-72  lg:relative ">
+      <span className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300 bg-clip-text text-center text-[12px] font-semibold leading-none text-transparent dark:from-white dark:to-black">
         Circles
       </span>
 
+
+
+        {/* Inner Circles */}
+    <OrbitingCircles
+      className="w-[20px] h-[20px] border-none bg-transparent lg:w-[0px]"
+      duration={20}
+      delay={20}
+      radius={30}
+    >
+      <Icons.whatsapp />
+    </OrbitingCircles>
+    <OrbitingCircles
+      className="w-[20px] h-[20px] border-none bg-transparent"
+      duration={20}
+      delay={10}
+      radius={50}
+    >
+      <Icons.notion />
+    </OrbitingCircles>
+
+    {/* Outer Circles (reverse) */}
+    <OrbitingCircles
+      className="w-[30px] h-[30px] border-none bg-transparent"
+      radius={70}
+      duration={20}
+      reverse
+    >
+      <Icons.googleDrive />
+    </OrbitingCircles>
+    <OrbitingCircles
+      className="w-[30px] h-[30px] border-none bg-transparent"
+      radius={90}
+      duration={20}
+      delay={20}
+      reverse
+    >
+      <Icons.gitHub />
+    </OrbitingCircles>
+    </div>
+    </div>
+
+
+  
+
+    
+    </div>
+{/* ----------------------------------------------------------------------------------------------- */}
+        {/* large */}
+<div className="hidden lg:block ">
+        <div className="relative -left-[40%] flex h-[500px] w-full lg:w-[140%] lg:h-[600px]  flex-col items-center justify-center overflow-hidden rounded-lg  bg-background md:shadow-xl ">
+      <span className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300 bg-clip-text text-center text-8xl font-semibold leading-none text-transparent dark:from-white dark:to-black">
+        Thirdvizion
+      </span>
+ 
+
+
+      <div className="m-4 flex flex-col gap-5 lg:absolute lg:top-1 lg:left-[70%] ">
+      <h6 className="text-[#0066FF] text-[13px] font-inter">WHY CHOOSE US</h6>
+      <h2 className="text-[#212529] text-[25px] font-bold w-[80%] tracking-widest">Boost Your Business<br></br><span className="text-[25px] text-[#212529] font-normal tracking-widest">With New Tech</span></h2><br />
+      <div className="text-[14px] text-[#666666] leading-7 m-1">Our team can assist you in transforming your business through latest<br></br> tech capabilities to stay ahead of the curve.</div>
+
+      <ul className="flex flex-col gap-4">
+        {features.map((item,index)=>(
+          <li><div className="flex  items-center font-semibold  gap-2"><div><TiTick className="bg-[#0066FF] rounded-full text-white " /></div><h6 className="text-[#212529] text-[15px] font-inter flex">{item}</h6></div></li>
+        ))}
+      </ul>
+
+      <a className=" mt-20"><span className="text-white bg-[#0066FF] px-6 py-3 rounded-sm">How We Works</span></a>
+    </div>
+
+
       {/* Inner Circles */}
       <OrbitingCircles
-        className="size-[30px] border-none bg-transparent"
-        duration={20}
-        delay={20}
-        radius={80}
-      >
-        <Icons.whatsapp />
-      </OrbitingCircles>
-      <OrbitingCircles
-        className="size-[30px] border-none bg-transparent"
-        duration={20}
-        delay={10}
-        radius={80}
-      >
-        <Icons.notion />
-      </OrbitingCircles>
+      className="w-[30px] h-[30px] border-none bg-transparent lg:w-[0px]"
+      duration={20}
+      delay={20}
+      radius={120}
+    >
+      <Icons.whatsapp />
+    </OrbitingCircles>
+    
+    <OrbitingCircles
+      className="w-[30px] h-[30px] border-none bg-transparent"
+      duration={20}
+      delay={10}
+      radius={180}
+    >
+      <Icons.notion />
+    </OrbitingCircles>
 
-      {/* Outer Circles (reverse) */}
-      <OrbitingCircles
-        className="size-[50px] border-none bg-transparent"
-        radius={190}
-        duration={20}
-        reverse
-      >
-        <Icons.googleDrive />
-      </OrbitingCircles>
-      <OrbitingCircles
-        className="size-[50px] border-none bg-transparent"
-        radius={190}
-        duration={20}
-        delay={20}
-        reverse
-      >
-        <Icons.gitHub />
-      </OrbitingCircles>
+    {/* Outer Circles (reverse) */}
+    <OrbitingCircles
+      className="w-[50px] h-[50px] border-none bg-transparent"
+      radius={240}
+      duration={20}
+      reverse
+    >
+      <Icons.googleDrive />
+    </OrbitingCircles>
+    <OrbitingCircles
+      className="w-[50px] h-[50px] border-none bg-transparent"
+      radius={300}
+      duration={20}
+      delay={20}
+      reverse
+    >
+      <Icons.gitHub />
+    </OrbitingCircles>
     </div>
+    </div>
+    </>
   );
 }
+
+
+  
 
 const Icons = {
   gitHub: () => (
@@ -172,7 +295,9 @@ const Icons = {
         fillRule="evenodd"
       />
     </svg>
+    
   ),
+  
 };
 
 export default IconCircles
