@@ -48,9 +48,9 @@ function IconCircles() {
     {/* small */}
     <div className='flex flex-col-reverse '>
   <div className="lg:flex lg:hidden  md:h-0 h-0">
-  <div className="relative bottom-48  -right-28 lg:left-0 flex h-[300px] lg:h-[600px] w-full  flex-col items-center justify-center overflow-hidden rounded-lg   md:-top-72  lg:relative ">
-      <span className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300 bg-clip-text text-center text-[12px] font-semibold leading-none text-transparent dark:from-white dark:to-black">
-        Circles
+  <div className="relative bottom-48 mt-16 left-32  lg:left-0 flex h-[300px] lg:h-[600px] w-fit  flex-col items-center justify-center rounded-lg   md:-top-72  lg:relative ">
+      <span className="pointer-events-none w-[180px] whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300 bg-clip-text text-center text-[12px] font-semibold leading-none text-transparent dark:from-white dark:to-black">
+        Thirdvizion
       </span>
 
 
