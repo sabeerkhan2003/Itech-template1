@@ -5,7 +5,8 @@ import Acheivements from '../components/Home/acheivements'
 import Services from "../components/Home/services"
 import IconCircles from "../components/Home/circle"
 import Projects from '../components/Home/projects'
-import Posts from '../components/Home/Posts'
+import Posts from '../components/Home/posts'
+import Contact from '../components/Home/contact'
 
 function Home() {
   return (
@@ -17,6 +18,7 @@ function Home() {
    <IconCircles />
    <Projects />
    <Posts/>
+   <Contact/>
    </>
   )
 }
