@@ -7,6 +7,7 @@ import IconCircles from "../components/Home/circle"
 import Projects from '../components/Home/projects'
 import Posts from '../components/Home/posts'
 import Contact from '../components/Home/contact'
+import Footer from '../components/Home/footer'
 
 function Home() {
   return (
@@ -19,6 +20,7 @@ function Home() {
    <Projects />
    <Posts/>
    <Contact/>
+   <Footer/>
    </>
   )
 }

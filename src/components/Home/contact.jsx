@@ -4,9 +4,7 @@ const datas=["name*","Email Address*","Your Inquiry About*"]
 
 function Contact() {
     return (
-        <div style={{
-            background: "linear-gradient(60deg, rgba(0,102,255,1) 9%, rgba(4,158,253,1) 69%, rgba(0,102,255,1) 100%)"
-        }} className='text-[#FFFFFF] h-auto'>
+        <div style={{background: "linear-gradient(174deg, rgba(14,57,123,1) 0%, rgba(0,102,255,1) 51%, rgba(44,157,227,1) 100%)"}} className='text-[#FFFFFF] h-auto'>
             <div className='flex flex-col justify-center gap-3 pt-20'>
                 <h6 className='text-center text-[13px] tracking-widest'>CONTACT US</h6>
                 <h2 className='text-center text-[25px] lg:text-[32px] font-bold'>Request Free <br className='lg:hidden'></br><span className='font-normal'>Consultancy</span></h2>
