@@ -84,7 +84,7 @@ function Posts() {
     };
 
     return (
-        <div className='pt-14 mt-36 bg-[rgb(231,236,240)] lg:mt-0 relative lg:pb-12 lg:pr-9'>
+        <div className='pt-14  bg-[rgb(231,236,240)] lg:mt-0 relative lg:pb-12 lg:pr-9'>
             <div className='pl-4 lg:pl-32'>
                 <h6 className='text-[#0066FF] text-[13px] mb-2'>PORTFOLIO</h6>
                 <h2 className='text-[25px] tracking-wider mb-3'>

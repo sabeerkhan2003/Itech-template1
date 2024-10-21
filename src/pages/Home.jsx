@@ -8,6 +8,8 @@ import Projects from '../components/Home/projects'
 import Posts from '../components/Home/posts'
 import Contact from '../components/Home/contact'
 import Footer from '../components/Home/footer'
+import Testimonials from '../components/Home/testimonials'
+import Experts from '../components/Home/experts'
 
 function Home() {
   return (
@@ -18,9 +20,12 @@ function Home() {
    <Services />
    <IconCircles />
    <Projects />
+   {/* <Testimonials />
+   <Experts/> */}
    <Posts/>
    <Contact/>
    <Footer/>
+   
    </>
   )
 }
