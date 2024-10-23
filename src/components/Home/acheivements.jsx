@@ -8,7 +8,7 @@ import a5 from "../../assets/ACH5.png"
 function Acheivements() {
   return (
     <>
-      <div className='m-4 lg:m-28 bg-gradient-to-r from-blue-600 to-[#049efd] via-blue-600  border-2 rounded-md border-none lg:pr-2 brd-light'>
+      <div className='m-4 lg:m-12 bg-gradient-to-r from-blue-600 to-[#049efd] via-blue-600  border-2 rounded-md border-none lg:pr-2 brd-light'>
       <div className=' lg:p-0  lg:m-[0] flex m-[5%]  items-center lg:pl-[7%]  pt-8 lg:pt-10 '>
             <a className='border-2 border-yellow-600 lg:border-none p-[2%] lg:p-[1.3%] border-dashed border-spacing-[3px] lg:w-[100%]  ' href='#'><img src={a1}></img></a>
             <div className='border-2  border-yellow-600 lg:invisible border-dashed border-spacing-[2px] w-[50%] h-[18px] text-[18px] flex justify-center items-center text-yellow-600 hidden lg:block lg:w-[110px] lg:h-[41px] lg:text-[2.5em] lg:flex'>////////</div>
@@ -34,22 +34,22 @@ function Acheivements() {
             <button className='border-2 rounded-md px-2 py-1 border-[#F8F9FA] m-[10%] lg:w-fit lg:px-7 lg:m-[0] lg:ml-16' ><span className='text-[12px] text-[#F8F9FA]'>More About Us</span></button>
           </div>
         </div>
-        <div className='mt-[20%] flex flex-col gap-2 items-center pb-[10%] lg:mt-16 lg:flex-row lg:w-fit lg:pl-[7%]' >
-          <div className=' border-2 border-gray  flex items-center w-[90%] p-1 lg:pl-5 lg:w-[70%] lg:border-none'>
-            <span className='text-[32px] text-[#ffff] px-5 py-2 lg:py-0 lg:px-2 lg:w-24 font-semibold' >20 +</span>
+        <div className='mt-[20%] flex flex-col gap-2 items-center pb-[10%] lg:mt-16 lg:flex-row  lg:w-fit  xl:w-full lg:ml-5 lg:mr-5' >
+          <div className=' border-2 border-gray  flex items-center w-[90%] p-1 lg:pl-5 lg:w-[70%] lg:border-none lg:justify-center'>
+            <span className='text-[32px] text-[#ffff] px-5 py-2 lg:py-0 lg:px-0 lg:w-24 font-semibold' >20 +</span>
             <div className='text-[14px] font-semibold text-[#ffff]  py-2 lg:px-0'>Years of Experiencs</div>
           </div>
-          <div className=' border-2 border-gray  flex items-center w-[90%] p-1 lg:pl-5 lg:w-[70%] lg:border-none'>
+          <div className=' border-2 border-gray  flex items-center w-[90%] p-1 lg:pl-5 lg:w-[70%] lg:border-none lg:justify-center'>
             <span className='text-[32px] font-semibold text-[#ffff] px-5 py-2 lg:py-0 lg:px-0 lg:w-24'>15 K</span>
             <div className='text-[14px] font-semibold text-[#ffff]  py-2'>Projects completed</div>
           </div>
-          <div className=' border-2 border-gray  flex items-center w-[90%] p-1 lg:pl-5 lg:w-[70%] lg:border-none'>
+          <div className=' border-2 border-gray  flex items-center w-[90%] p-1 lg:pl-5 lg:w-[70%] lg:border-none lg:justify-center'>
             <span className='text-[32px] font-semibold text-[#ffff] px-5 py-2'>240</span>
             <div className='text-[14px] font-semibold text-[#ffff]  py-2 lg:py-0 lg:px-0 lg:w-24'>Awards acheived</div>
           </div>
-          <div className=' border-2 border-gray  flex items-center w-[90%] p-1 lg:pl-5 lg:w-[70%] lg:border-none'>
+          <div className=' border-2 border-gray  flex items-center w-[90%] p-1 lg:pl-5 lg:w-[70%] lg:border-none lg:justify-center'>
             <span className='text-[32px] font-semibold text-[#ffff] px-5 py-2'>180</span>
-            <div className='text-[14px] font-semibold text-[#ffff]  py-2 lg:py-0 lg:px-0 lg:w-24'>Satisfied clients on 24 countries</div>
+            <div className='text-[14px] font-semibold text-[#ffff]  py-2 lg:py-0 lg:px-0 lg:w-full'>Satisfied clients on 24 countries</div>
           </div>
         </div>
 

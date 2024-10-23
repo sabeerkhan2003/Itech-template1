@@ -15,10 +15,12 @@ function Hero() {
 
             <div className='  flex relative flex-col lg:left-[20%] '>
                 <img src={bg} className='object-cover w-100% lg:w-[50%] absolute -left-[20%] top-40 h-50 lg:top-10' style={{backgroundSize:"70px 70px"}} alt="" />
+                <div className='m-4 lg:m-0'>
                 <h6 className=' text-[13px] text-primary pl-3 tracking-wider font-inter '>ITECK AGENCY</h6>
                 <h2 className=' text-[55px] text-[#212529] lg:w-[450px] pl-2'><b className=' '>Technology & IT</b><p >Solutions</p></h2>
                 <br></br>
-                <div className=' lg:w-[340px] text-gray tracking-wide text-xs p-4 ml-1 mb-9 h-24 font-inter font-medium leading-loose'>We transform businesses of most major sectors with powerful and adaptable digital solutions that satisfy the needs of today.</div>
+                </div>
+                <div className='  lg:w-[340px] text-gray tracking-wide text-xs p-4 ml-1 mb-9 h-24 font-inter font-medium leading-loose'>We transform businesses of most major sectors with powerful and adaptable digital solutions that satisfy the needs of today.</div>
                 <div>
                 </div>
                 <div className='flex gap-5 pl-4'>

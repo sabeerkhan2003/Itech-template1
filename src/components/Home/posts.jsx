@@ -111,7 +111,7 @@ function Posts() {
                                 key={post.id}
                                 className='min-w-[100%] md:min-w-[50%] lg:min-w-[33.33%] xl:min-w-[25%] p-4'
                             >
-                                <div className='relative h-[350px] w-full border-2 rounded-lg bg-black overflow-hidden rounded-[20px]'>
+                                <div className='relative h-[350px] w-full border-2  bg-black overflow-hidden rounded-[20px]'>
                                     <div className='h-full w-full'>
                                         <img src={post.postImage} className='h-full w-full object-cover  hover:transform hover:scale-125 hover:-rotate-12 transition duration-300 ease-in-out' alt="Post" />
                                     </div>
