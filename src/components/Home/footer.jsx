@@ -1,4 +1,5 @@
 import React from 'react'
+import 'aos/dist/aos.css'
 import logo from '../../assets/footer/logo_cl.png'
 import { IoHomeOutline } from "react-icons/io5";
 import { HiOutlineMailOpen } from "react-icons/hi";
@@ -31,7 +32,7 @@ function Footer() {
 
     return (
         <div className='bg-black px-4 text-white p-6 lg:px-16 py-16 '>
-            <div className='lg:flex lg:flex-row lg:justify-center '>
+            <div className='lg:flex lg:flex-row lg:justify-center ' data-aos="fade-up">
                 <div>
             <img src={logo} className='w-40 lg:w-44 lg:h-10.5  lg:mt-3 '></img>
             <div className='text-[14px] mt-7 lg:w-2/3  '>Best IT Solutions & Technology WordPress
@@ -70,7 +71,7 @@ function Footer() {
                         <a className='text-[13px] text-[#AAA7A7] ' key={index} href="#">{item}</a>
                 )) }</div>
             </div>
-            <div className='flex flex-col gap-2 lg:gap-4'>
+            <div className='flex flex-col gap-4 lg:gap-4'>
                 <h6 className='text-[16px] mt-3'>Newsletter</h6>
                 <a className='text-[13px] text-[#AAA7A7] ' >Register now to get latest updates on promotions & coupons.</a>
                 <div className='flex gap-1'>

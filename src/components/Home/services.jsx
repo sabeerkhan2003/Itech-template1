@@ -1,10 +1,10 @@
 import React from 'react';
-import ser1 from "../../assets/services1.png";
-import ser2 from "../../assets/services2.png";
-import ser3 from "../../assets/services3.png";
-import ser4 from "../../assets/services4.png";
-import ser5 from "../../assets/services5.png";
-import ser6 from "../../assets/services6.png";
+import ser1 from "../../assets/services/services1.png";
+import ser2 from "../../assets/services/services2.png";
+import ser3 from "../../assets/services/services3.png";
+import ser4 from "../../assets/services/services4.png";
+import ser5 from "../../assets/services/services5.png";
+import ser6 from "../../assets/services/services6.png";
 
 const servicesData = [
   { title: "IT Consultation", img: ser1, description: "Trust our top minds to eliminate workflow pain points, implement new tech & app." },
@@ -18,7 +18,7 @@ const servicesData = [
 function Services() {
   return (
     <>
-      <div className='m-[5%]'>
+      <div className='m-[5%]' data-aos="fade-up" data-aos-duration="2000">
         <h6 className='text-primary text-[13px] tracking-wider'>OUR SERVICES</h6>
         <h2 className='text-[25px] font-inter tracking-wider mr-[10%]'>
           <b className='mr-[3%]'>Perfect IT Solutions </b>
@@ -26,10 +26,10 @@ function Services() {
         </h2>
       </div>
 
-      <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-[5%] m-[5%]'>
+      <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-[5%] m-[5%]'  data-aos="fade-up"  >
         {servicesData.map((service, index) => (
-          <div key={index} className='border-2 p-6 border-none'>
-            <div className='flex justify-between items-center'>
+          <div key={index} className='border-2 p-6 border-none' >
+            <div className='flex justify-between items-center' >
               <a className='text-[20px] text-[#000000] font-bold'>{service.title}</a>
               <span className='text-[12px] text-primary'>{`0${index + 1}`}</span>
             </div>

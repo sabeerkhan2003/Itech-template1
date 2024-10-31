@@ -1,7 +1,7 @@
 import React from 'react'
-import img from '../../assets/head.png'
-import bg from '../../assets/head_shape_l.png'
-import bg_1 from '../../assets/head_shape_r.png'
+import img from '../../assets/hero/head.png'
+import bg from '../../assets/hero/head_shape_l.png'
+import bg_1 from '../../assets/hero/head_shape_r.png'
 import { FiPlayCircle } from 'react-icons/fi'
 import { MdOutlinePlayArrow } from 'react-icons/md'
 

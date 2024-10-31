@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import 'aos/dist/aos.css'
 import post1 from "../../assets/posts/1.jpeg";
 import post2 from "../../assets/posts/2.jpeg";
 import post3 from "../../assets/posts/3.jpeg";
@@ -85,7 +86,7 @@ function Posts() {
 
     return (
         <div className='pt-14  bg-[rgb(231,236,240)] lg:mt-0 relative lg:pb-12 lg:pr-9'>
-            <div className='pl-4 lg:pl-32'>
+            <div className='pl-4 lg:pl-32' data-aos="fade-up">
                 <h6 className='text-[#0066FF] text-[13px] mb-2'>PORTFOLIO</h6>
                 <h2 className='text-[25px] tracking-wider mb-3'>
                     <b>Latest Posts</b><br className='lg:hidden' />
@@ -94,7 +95,7 @@ function Posts() {
             </div>
 
             {/* Carousel Container */}
-            <div className='relative flex justify-center items-center lg:mx-20'>
+            <div className='relative flex justify-center items-center lg:mx-20' data-aos="fade-up">
 
                 {/* Left Arrow */}
                 <button onClick={goToPrevious} className='absolute left-8 lg:left-4 z-10' disabled={currentIndex === 0}>

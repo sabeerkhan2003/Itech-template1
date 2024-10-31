@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import 'aos/dist/aos.css'
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import img1 from "../../assets/project/1.jpeg";
@@ -82,8 +83,8 @@ function Projects() {
   ];
 
   return (
-    <div className='pt-14 mt-36 bg-[rgb(238,244,248)] lg:mt-0 relative  lg:pb-12 lg:pr-9'>
-      <div className='pl-4 lg:pl-32 '>
+    <div className='pt-14 mt-36 bg-[rgb(238,244,248)] lg:mt-0 relative  lg:pb-12 lg:pr-9'  >
+      <div className='pl-4 lg:pl-32' data-aos="fade-up" >
         <h6 className='text-[#0066FF] text-[13px] mb-2  '>PORTFOLIO</h6>
         <h2 className='text-[25px] tracking-wider mb-3'>
           <b>Latest Projects </b><br className='lg:hidden'></br>
@@ -100,7 +101,7 @@ function Projects() {
         showDots={isMobile} // Show dots only on small screens
       >
         {titles.map((title, index) => (
-          <div key={index}>
+          <div key={index} data-aos="fade-up">
             <div className='flex flex-col justify-center gap-3 border-spacing-2 bg-[#FFFFFF] border-2 m-4 lg:m-0  rounded-lg overflow-hidden lg:mx-14 lg:w-[340px] '>
               <img className='size-[100%] rounded-t-lg lg:h-[210px]' src={imgSrcs[index]} alt={title} />
               <div className='pl-4 pb-3 '>
