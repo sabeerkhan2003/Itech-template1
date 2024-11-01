@@ -21,7 +21,7 @@ function App() {
     <div className='font-inter'>
       <BrowserRouter>
         <Routes>
-          <Route path="/home" element={<Home />}></Route>
+          <Route path="" element={<Home />}></Route>
           <Route path="/landing" element={<Landing />}></Route>
         </Routes>
       </BrowserRouter>
