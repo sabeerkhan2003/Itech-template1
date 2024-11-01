@@ -18,16 +18,13 @@ function App() {
 
 
   return (
-    <div className='font-inter'>
+    <div className='font-inter bg-black'>
       <BrowserRouter>
         <Routes>
           <Route path="" element={<Home />}></Route>
           <Route path="/landing" element={<Landing />}></Route>
         </Routes>
       </BrowserRouter>
-
-
-
     </div>
 
 
